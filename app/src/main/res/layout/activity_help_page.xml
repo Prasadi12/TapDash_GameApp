@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pagebkg"
+    tools:context=".AddPlayers">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/lavender_border">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HELP!"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Begin by clicking the Start button to initiate the game.\n\n• Enter the names of the players to personalize the gaming experience.\n\n• Once the players' names are entered, proceed by clicking the Start Game button.\n\n• To make a move, click on the box of your choice on the game board.\n\n• Engage in the game, strategize your moves, and most importantly, have a great time playing."
+                android:textSize="20sp"
+                android:justificationMode="inter_word"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/exitButton"
+                android:text="EXIT"
+                android:textSize="18sp"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

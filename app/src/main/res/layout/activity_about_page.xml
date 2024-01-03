@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pagebkg"
+    tools:context=".AddPlayers">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/lavender_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TapDash is a delightful and uncomplicated game played on a 3x3 grid. Players take turns placing their chosen symbol, X or O, in an empty cell, with the objective of forming a row of three of their symbols either horizontally, vertically, or diagonally. The player who achieves this first is declared the winner. If the entire grid is filled without a player securing three in a row, the game ends in a draw. This classic game is not only easy to learn but also a great way to enjoy some friendly competition with friends or family. So, have fun playing TapDash!"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/exitButton"
+                android:text="EXIT"
+                android:textSize="18sp"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
